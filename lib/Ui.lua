@@ -330,7 +330,7 @@ function Ui:DisplayAura()
     local AURADELAY = Rand:NextInteger(1, 5)
 
 	--// Title
-	local Title = ` Cry4pt Spy`
+	local Title = `Cry4pt Spy`
 	local Seasonal = self:TurnSeasonal(Title)
     Window:SetTitle(Seasonal)
 
