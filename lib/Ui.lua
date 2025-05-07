@@ -330,7 +330,7 @@ function Ui:DisplayAura()
     local AURADELAY = Rand:NextInteger(1, 5)
 
 	--// Title
-	local Title = ` Cry4pt Spy - Depso | AURA: {AURA} `
+	local Title = ` Cry4pt Spy - cry4pt | AURA: {AURA} `
 	local Seasonal = self:TurnSeasonal(Title)
     Window:SetTitle(Seasonal)
 
@@ -434,7 +434,7 @@ function Ui:AddDetailsSection(OptionsTab)
 	OptionsTab:Separator({Text="Infomation"})
 	OptionsTab:BulletText({
 		Rows = {
-			"Cry4pt spy - Created by depso!",
+			"Cry4pt spy - Created by cry4pt!",
 			"Thank you to syn for your suggestions and testing",
 			"Boiiiiii what did you say about Cry4pt Spy 💀💀 (+999999 AURA)"
 		}

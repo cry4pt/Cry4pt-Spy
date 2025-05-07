@@ -11,7 +11,7 @@
 	⣿⣿⣟⣁⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 	⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 
-    Written by @depso (cry4pt)
+    Written by @cry4pt (cry4pt)
     MIT License
     
     https://github.com/cry4pt
