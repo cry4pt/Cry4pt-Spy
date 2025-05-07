@@ -11,18 +11,18 @@
 	⣿⣿⣟⣁⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 	⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 
-    Written by @depso (depthso)
+    Written by @depso (cry4pt)
     MIT License
     
-    https://github.com/depthso
+    https://github.com/cry4pt
 ]]
 
 --// Base Configuration
 local Configuration = {
 	UseWorkspace = false, 
 	NoActors = false,
-	RepoUrl = "https://raw.githubusercontent.com/depthso/Cry4pt-Spy/refs/heads/main",
-	ParserUrl = "https://raw.githubusercontent.com/depthso/Roblox-parser/refs/heads/main"
+	RepoUrl = "https://raw.githubusercontent.com/cry4pt/Cry4pt-Spy/refs/heads/main",
+	ParserUrl = "https://raw.githubusercontent.com/cry4pt/Roblox-parser/refs/heads/main"
 }
 
 --// Load overwrites
@@ -127,7 +127,7 @@ end)
 Ui:ShowModal({
 	"<b>Attention!</b>",
 	"Cry4pt Spy is in BETA, please expect issues\n",
-	"Report any issues to the Github page (depthso/Cry4pt-Spy)\n",
+	"Report any issues to the Github page (cry4pt/Cry4pt-Spy)\n",
 	"Many thanks!"
 })
 
