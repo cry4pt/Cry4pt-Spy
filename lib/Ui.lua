@@ -1,7 +1,7 @@
 local Ui = {
 	DefaultEditorContent = [=[--[[ 
 	Welcome to Cry4pt Spy
-	Created by depso!
+	Created by cry4pt!
 ]] ]=],
 	LogLimit = 200,
 
@@ -20,7 +20,7 @@ local Ui = {
         December = "🎄%s🎁"
     },
     BaseConfig = {
-        Theme = "Cry4ptSpy",
+        Theme = "SigmaSpy",
         Size = UDim2.fromOffset(600, 400),
         NoScroll = true,
     },
@@ -154,7 +154,7 @@ function Ui:LoadReGui()
 
 	--// ReGui
 	local PrefabsId = "rbxassetid://" .. ReGui.PrefabsId
-	ReGui:DefineTheme("Cry4ptSpy", ThemeConfig)
+	ReGui:DefineTheme("SigmaSpy", ThemeConfig)
 	ReGui:Init({
 		Prefabs = InsertService:LoadLocalAsset(PrefabsId)
 	})
