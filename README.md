@@ -1,14 +1,14 @@
-# Sigma-Spy
+# Cry4pt-Spy
 A complete Remote Spy with an incredible parser that captures Client receives and pushes with Actor support!
 
 ## Notices
-- Sigma Spy will have bugs, please report any bugs by opening an [issue](https://github.com/depthso/Sigma-Spy/issues) on Github
-- If you gave a suggestion, please post it in the [discussions](https://github.com/depthso/Sigma-Spy/discussions)
+- Cry4pt Spy will have bugs, please report any bugs by opening an [issue](https://github.com/depthso/Cry4pt-Spy/issues) on Github
+- If you gave a suggestion, please post it in the [discussions](https://github.com/depthso/Cry4pt-Spy/discussions)
 - Please do not use Potassium in games with Actors as Potassium's crude implimentations break
 
 ## Loadstring
 ```lua
---// Sigma Spy @depso
+--// Cry4pt Spy @depso
 loadstring(game:HttpGet("https://raw.githubusercontent.com/cry4pt/Cry4pt-Spy/refs/heads/main/Main.lua"), "Cry4pt Spy")()
 ```
 
@@ -40,7 +40,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/cry4pt/Cry4pt-Spy/ref
 </table>
 
 ## Required functions ⚠️
-Sigma spy will prompt you if your executor does not support it.
+Cry4pt spy will prompt you if your executor does not support it.
 Your executor must support these functions in order for it to function:
 - create_comm_channel
 - get_comm_channel
