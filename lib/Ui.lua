@@ -174,7 +174,6 @@ function Ui:CreateWindow()
 	--// Create Window
     local Window = ReGui:Window(BaseConfig)
     self.Window = Window
-    self:AuraCounterService()
 
 	--// Check if the font was successfully downloaded
 	self:FontWasSuccessful()
