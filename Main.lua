@@ -20,7 +20,7 @@
 --// Base Configuration
 local Configuration = {
 	UseWorkspace = false, 
-	NoActors = true,
+	NoActors = false,
 	RepoUrl = "https://raw.githubusercontent.com/cry4pt/Cry4pt-Spy/refs/heads/main",
 	ParserUrl = "https://raw.githubusercontent.com/depthso/Roblox-parser/refs/heads/main"
 }
