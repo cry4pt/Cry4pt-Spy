@@ -330,7 +330,7 @@ function Ui:DisplayAura()
     local AURADELAY = Rand:NextInteger(1, 5)
 
 	--// Title
-	local Title = ` Cry4pt Spy - cry4pt | AURA: {AURA} `
+	local Title = ` Cry4pt Spy`
 	local Seasonal = self:TurnSeasonal(Title)
     Window:SetTitle(Seasonal)
 
@@ -435,8 +435,7 @@ function Ui:AddDetailsSection(OptionsTab)
 	OptionsTab:BulletText({
 		Rows = {
 			"Cry4pt spy - Created by cry4pt!",
-			"Thank you to syn for your suggestions and testing",
-			"Boiiiiii what did you say about Cry4pt Spy 💀💀 (+999999 AURA)"
+			"Thank you to syn for your suggestions and testing"
 		}
 	})
 end
@@ -582,11 +581,11 @@ function Ui:SetFocusedRemote(Data)
 		local ReturnValues = Data.ReturnValues
 
 		if not IsRemoteFunction then
-			SetIDEText("-- Remote is not a function bozo (-9999999 AURA)")
+			SetIDEText("-- Remote is not a function bozo")
 			return
 		end
 		if not ReturnValues then
-			SetIDEText("-- No return values (-9999999 AURA)")
+			SetIDEText("-- No return values")
 			return
 		end
 
@@ -597,7 +596,7 @@ function Ui:SetFocusedRemote(Data)
 	function Data:GenerateInfo()
 		--// Reject client events
 		if IsReceive then 
-			local Script = "-- Boiiiii what did you say about IsReceive (-9999999 AURA)\n"
+			local Script = "-- What did you say about IsReceive\n"
 			Script ..= "\n-- Voice message: ▶ .ılıılıılıılıılıılı. 0:69\n"
 
 			SetIDEText(Script)
@@ -611,21 +610,21 @@ function Ui:SetFocusedRemote(Data)
 	function Data:Decompile()
 		--// Check if decompile function exists
 		if not decompile then 
-			SetIDEText("--Exploit is missing 'decompile' function (-9999999 AURA)")
+			SetIDEText("--Exploit is missing 'decompile' function")
 			return 
 		end
 
 		--// Check if script exists
 		if not Script then 
-			SetIDEText("--Script is missing (-9999999 AURA)")
+			SetIDEText("--Script is missing")
 			return
 		end
 
-		SetIDEText("--Decompiling... +9999999 AURA (mango phonk)")
+		SetIDEText("--Decompiling...")
 
 		--// Decompile script
 		local Decompiled = decompile(Script)
-		local Source = "--BOOIIII THIS IS SO TUFF FLIPPY SKIBIDI AURA (Cry4pt SPY)\n"
+		local Source = "--(Cry4pt SPY)\n"
 		Source ..=  Decompiled
 
 		SetIDEText(Source)
