@@ -5,20 +5,6 @@ local Ui = {
 ]] ]=],
 	LogLimit = 200,
 
-    SeasonLabels = { 
-        January = "⛄%s⛄", 
-        February = "🌨️%s🏂", 
-        March = "🌹%s🌺", 
-        April = "🐣%s✝️", 
-        May = "🐝%s🌞", 
-        June = "🪴%s🥕", 
-        July = "🌊%s🏖️", 
-        August = "☀️%s🌞", 
-        September = "🍁%s🍁", 
-        October = "🎃%s🎃", 
-        November = "🍂%s🍂", 
-        December = "🎄%s🎁"
-    },
     BaseConfig = {
         Theme = "SigmaSpy",
         Size = UDim2.fromOffset(600, 400),
@@ -66,6 +52,7 @@ local IDEModule = loadstring(game:HttpGet('https://raw.githubusercontent.com/dep
 
 --// Services
 local InsertService: InsertService
+local Title = `Cry4pt Spy`
 
 --// Modules
 local Flags
@@ -110,14 +97,6 @@ end
 
 function Ui:SetClipboard(Content: string)
 	SetClipboard(Content)
-end
-
-function Ui:TurnSeasonal(Text: string): string
-    local SeasonLabels = self.SeasonLabels
-    local Month = os.date("%B")
-    local Base = SeasonLabels[Month]
-
-    return Base:format(Text)
 end
 
 function Ui:SetFont(FontJsonFile: string, FontContent: string)
@@ -318,31 +297,6 @@ function Ui:CreateElements(Parent, Options)
 		--// Create column and element
 		Checkbox = Container[Class](Container, Data)
 	end
-end
-
---// Boiiii what did you say about Cry4pt Spy 💀💀
-function Ui:DisplayAura()
-    local Window = self.Window
-    local Rand = self.RandomSeed
-
-	--// Aura (boiiiii)
-    local AURA = Rand:NextInteger(1, 9999999)
-    local AURADELAY = Rand:NextInteger(1, 5)
-
-	--// Title
-	local Title = `Cry4pt Spy`
-	local Seasonal = self:TurnSeasonal(Title)
-    Window:SetTitle(Seasonal)
-
-    wait(AURADELAY)
-end
-
-function Ui:AuraCounterService()
-    task.spawn(function()
-        while true do
-            self:DisplayAura()
-        end
-    end)
 end
 
 function Ui:CreateWindowContent(Window)
