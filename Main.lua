@@ -1,5 +1,5 @@
 --[[
-	⣿⣿⣿⣿⣿ SIGMA SPY ⣿⣿⣿⣿⣿
+	⣿⣿⣿⣿⣿ Cry4pt SPY ⣿⣿⣿⣿⣿
 	⣿⣿⣯⡉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉
 	⠉⠻⣿⣿⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 	⠀⠀⠈⠻⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -21,7 +21,7 @@
 local Configuration = {
 	UseWorkspace = false, 
 	NoActors = false,
-	RepoUrl = "https://raw.githubusercontent.com/depthso/Sigma-Spy/refs/heads/main",
+	RepoUrl = "https://raw.githubusercontent.com/depthso/Cry4pt-Spy/refs/heads/main",
 	ParserUrl = "https://raw.githubusercontent.com/depthso/Roblox-parser/refs/heads/main"
 }
 
@@ -60,8 +60,8 @@ Files:Init({
 --// Modules
 local Scripts = {
 	--// User configurations
-	Config = Files:GetModule("Sigma Spy/Config", "Config"),
-	ReturnSpoofs = Files:GetModule("Sigma Spy/Return spoofs", "Return Spoofs"),
+	Config = Files:GetModule("Cry4pt Spy/Config", "Config"),
+	ReturnSpoofs = Files:GetModule("Cry4pt Spy/Return spoofs", "Return Spoofs"),
 	Configuration = Configuration,
 
 	--// Libraries
@@ -98,7 +98,7 @@ Files:LoadModules(Modules, {
 --// ReGui Create window
 local Window = Ui:CreateWindow()
 
---// Check if Sigma spy is supported
+--// Check if Cry4pt spy is supported
 local Supported = Process:CheckIsSupported()
 if not Supported then 
 	Window:Close()
@@ -126,8 +126,8 @@ end)
 --// Beta alert modal
 Ui:ShowModal({
 	"<b>Attention!</b>",
-	"Sigma Spy is in BETA, please expect issues\n",
-	"Report any issues to the Github page (depthso/Sigma-Spy)\n",
+	"Cry4pt Spy is in BETA, please expect issues\n",
+	"Report any issues to the Github page (depthso/Cry4pt-Spy)\n",
 	"Many thanks!"
 })
 
