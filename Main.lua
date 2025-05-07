@@ -22,7 +22,7 @@ local Configuration = {
 	UseWorkspace = false, 
 	NoActors = false,
 	RepoUrl = "https://raw.githubusercontent.com/cry4pt/Cry4pt-Spy/refs/heads/main",
-	ParserUrl = "https://raw.githubusercontent.com/cry4pt/Roblox-parser/refs/heads/main"
+	ParserUrl = "https://raw.githubusercontent.com/depthso/Roblox-parser/refs/heads/main"
 }
 
 --// Load overwrites
