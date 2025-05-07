@@ -61,7 +61,7 @@ end
 
 function Generation:GetBase(Module): string
 	local Version = ParserModule.Version
-	local Code = "-- Generated with sigma spy BOIIIIIIIII (+9999999 AURA)\n"
+	local Code = "-- Generated with Cry4pt spy BOIIIIIIIII (+9999999 AURA)\n"
 	Code ..= `-- Parser version {Version}\n\n`
 
 	--// Generate variables code

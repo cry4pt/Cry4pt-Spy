@@ -1,6 +1,6 @@
 local Ui = {
 	DefaultEditorContent = [=[--[[ 
-	Welcome to Sigma Spy
+	Welcome to Cry4pt Spy
 	Created by depso!
 ]] ]=],
 	LogLimit = 200,
@@ -20,7 +20,7 @@ local Ui = {
         December = "🎄%s🎁"
     },
     BaseConfig = {
-        Theme = "SigmaSpy",
+        Theme = "Cry4ptSpy",
         Size = UDim2.fromOffset(600, 400),
         NoScroll = true,
     },
@@ -144,7 +144,7 @@ function Ui:FontWasSuccessful()
 	self:ShowModal({
 		"Unfortunately your executor was unable to download the font and therefore switched to the Dark theme",
 		"\nIf you would like to use the ImGui theme, \nplease download the font (assets/ProggyClean.ttf)",
-		"and put put it in your workspace folder\n(Sigma Spy/assets)"
+		"and put put it in your workspace folder\n(Cry4pt Spy/assets)"
 	})
 end
 
@@ -154,7 +154,7 @@ function Ui:LoadReGui()
 
 	--// ReGui
 	local PrefabsId = "rbxassetid://" .. ReGui.PrefabsId
-	ReGui:DefineTheme("SigmaSpy", ThemeConfig)
+	ReGui:DefineTheme("Cry4ptSpy", ThemeConfig)
 	ReGui:Init({
 		Prefabs = InsertService:LoadLocalAsset(PrefabsId)
 	})
@@ -214,7 +214,7 @@ function Ui:ShowModal(Lines: table)
 
 	--// Modal Window
 	local ModalWindow = Window:PopupModal({
-		Title = "Sigma Spy"
+		Title = "Cry4pt Spy"
 	})
 	ModalWindow:Label({
 		Text = Message,
@@ -231,7 +231,7 @@ end
 
 function Ui:ShowUnsupported(FuncName: string)
 	Ui:ShowModal({
-		"Unfortunately Sigma Spy is not supported on your executor",
+		"Unfortunately Cry4pt Spy is not supported on your executor",
 		`\n\nMissing function: {FuncName}`
 	})
 end
@@ -320,7 +320,7 @@ function Ui:CreateElements(Parent, Options)
 	end
 end
 
---// Boiiii what did you say about Sigma Spy 💀💀
+--// Boiiii what did you say about Cry4pt Spy 💀💀
 function Ui:DisplayAura()
     local Window = self.Window
     local Rand = self.RandomSeed
@@ -330,7 +330,7 @@ function Ui:DisplayAura()
     local AURADELAY = Rand:NextInteger(1, 5)
 
 	--// Title
-	local Title = ` Sigma Spy - Depso | AURA: {AURA} `
+	local Title = ` Cry4pt Spy - Depso | AURA: {AURA} `
 	local Seasonal = self:TurnSeasonal(Title)
     Window:SetTitle(Seasonal)
 
@@ -434,9 +434,9 @@ function Ui:AddDetailsSection(OptionsTab)
 	OptionsTab:Separator({Text="Infomation"})
 	OptionsTab:BulletText({
 		Rows = {
-			"Sigma spy - Created by depso!",
+			"Cry4pt spy - Created by depso!",
 			"Thank you to syn for your suggestions and testing",
-			"Boiiiiii what did you say about Sigma Spy 💀💀 (+999999 AURA)"
+			"Boiiiiii what did you say about Cry4pt Spy 💀💀 (+999999 AURA)"
 		}
 	})
 end
@@ -625,7 +625,7 @@ function Ui:SetFocusedRemote(Data)
 
 		--// Decompile script
 		local Decompiled = decompile(Script)
-		local Source = "--BOOIIII THIS IS SO TUFF FLIPPY SKIBIDI AURA (SIGMA SPY)\n"
+		local Source = "--BOOIIII THIS IS SO TUFF FLIPPY SKIBIDI AURA (Cry4pt SPY)\n"
 		Source ..=  Decompiled
 
 		SetIDEText(Source)
