@@ -8,7 +8,7 @@ A complete Remote Spy with an incredible parser that captures Client receives an
 
 ## Loadstring
 ```lua
---// Cry4pt Spy @depso
+--// Cry4pt Spy @cry4pt
 loadstring(game:HttpGet("https://raw.githubusercontent.com/cry4pt/Cry4pt-Spy/refs/heads/main/Main.lua"), "Cry4pt Spy")()
 ```
 
